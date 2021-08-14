@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',  'django-insecure-wdtbe#5=5jd=^
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['45.149.77.72']
+ALLOWED_HOSTS = ['0.0.0.0', '45.149.77.72', 'sadaf.xyz']
 
 
 # Application definition
