@@ -3,6 +3,6 @@
 
 # Database
 *.sqlite3
-
+EmotionDetector/local_settings.py
 .idea/
 __pycache__/

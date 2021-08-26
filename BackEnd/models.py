@@ -2,6 +2,9 @@ from django.db import models
 import uuid
 
 
+def get_uuid():
+    return uuid.uuid1().hex
+
 # Create your models here.
 class TestSubject(models.Model):
     GENDERS = (
@@ -21,7 +24,7 @@ class TestSubject(models.Model):
 
     education = models.CharField(choices=EDUCATIONS, max_length=50)
     occupation = models.CharField(max_length=50)
-    userId = models.CharField(max_length=255, unique=True, default=uuid.uuid1().hex)
+    userId = models.CharField(max_length=255, unique=True, default=get_uuid)
 
     def get_user_id(self):
         return self.userId
